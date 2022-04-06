@@ -1,0 +1,24 @@
+extends _layout
+
+block content
+  if(error)
+    div.error
+      p.error-text #{error}
+  if(success)
+    div.success
+      p.success-text #{success}
+
+  form.login__form(action="submit-post" method="post")
+    h3.login__title(style="text-align: center;") Login
+
+    label.login__label(for="title" ) Name
+    input.login__input(type="text" name="name")
+    label.login__label(for="content" ) Email
+    input.login__input(type="text" name="email")
+
+    label.login__label(for="content" ) Password
+    input.login__input(type="password" name="password")
+
+
+    button.btn(type="submit") Submit
+

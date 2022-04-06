@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+}
+
+.error {
+  background: linear-gradient(20deg, rgba(255,0,0,1) 0%, rgba(200,0,0,1) 100%);
+}
+
+.error-text {
+  color: white;
+}
+.success {
+  background: linear-gradient(135deg, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+}
+
+.success-text {
+
+}
+
+.nav {
+  height: 50px;
+  background-color: lightblue;
+}
+
+
+.nav__links {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__links a {
+  text-decoration: none;
+  color: rgb(3, 83, 3);
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgb(230, 234, 238);
+  border-radius: 4px;
+}
+
+.login-title {
+  font-size:30px;
+}
+
+.login__label {
+padding: .50rem;
+}
+
+.btn {
+  background-color: rgb(109, 200, 212);
+  color: white;
+  width: 20%;
+  margin: 1rem auto 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: .5s;
+  background-color: black;
+  color: rgb(109, 200, 212);
+}
